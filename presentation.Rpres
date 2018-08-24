@@ -17,7 +17,7 @@ transition-speed: slow
 
 Overview
 ========================================================
-In this presentaion the R dataset mtcars used. 
+In this presentaion the R dataset mtcars is used. 
 
 A linear regression model is used to predict the miles per gallon for a car with selected properties.
 
@@ -26,12 +26,13 @@ The user can select the following:
 - `Gear`
 - `Cylinder`
 
-After input of the properties, a plot is created and will give a predicted miles per gallon of a car.
+After input of the properties, a plot with regression line is created and will give a predicted miles per gallon of a car.
 
 Data Set
 ========================================================
 
-The data used for this application is mtcars available in R.
+The data used for this application is mtcars that is available in R.
+
 The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.
 
 
@@ -49,7 +50,9 @@ The source code is in 2 files:
 - `ui.R`
 - `server.R`
 
-Both files can be found here: [GitHub repo](https://github.com/Vmudsam)
+You can find my files here at my Git Hub Repo: 
+
+https://github.com/Vmudsam/DevelopingDataProject-CourseProject
 
 Application
 ========================================================

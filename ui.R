@@ -13,19 +13,19 @@ library(shiny)
 shinyUI(fluidPage(
    
    # Application title
-   titlePanel("Mile per gallon prediction"),
+   titlePanel("Miles per Gallon Prediction"),
    
    # Sidebar with options selectors 
    sidebarLayout(
       sidebarPanel(
          helpText("This application predicts the mpg of a car based on its characteristics."),
          h3("Please Select:"),
-         numericInput("wt", label = h4("Weight"), step = 0.05, value = 3),
-         selectInput("gear", label = h4("Gear"), 
-                     choices = list("Unknown" = "*", "3" = "3", "4" = "4",
+         numericInput("wt", label = h4("Weight (1000 lbs)"), step = 0.05, value = 3),
+         selectInput("gear", label = h4("Number of Gears"), 
+                     choices = list("3" = "3", "4" = "4",
                                     "5" = "5" )),
-         selectInput("cyl", label = h4("Cylinder"), 
-                     choices = list("Unknown" = "*", "4" = "4", "6" = "6",
+         selectInput("cyl", label = h4("Number of Cylinders"), 
+                     choices = list("4" = "4", "6" = "6",
                                     "8" = "8"))
       ),
       
