@@ -1,0 +1,71 @@
+<style type="text/css">
+
+.reveal pre code {
+  display: block; padding: 0.3em;
+  font-size: 1em;
+  
+</style>
+
+
+Miles Per Gallon 
+========================================================
+author: Veronica Muedsam
+date: 08/23/2018
+autosize: true
+transition: rotate
+transition-speed: slow
+
+Overview
+========================================================
+In this presentaion the R dataset mtcars used. 
+
+A linear regression model is used to predict the miles per gallon for a car with selected properties.
+
+The user can select the following:
+- `Weight`
+- `Gear`
+- `Cylinder`
+
+After input of the properties, a plot is created and will give a predicted miles per gallon of a car.
+
+Data Set
+========================================================
+
+The data used for this application is mtcars available in R.
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.
+
+
+```{r echo=FALSE}
+summary(mtcars)
+
+```
+
+Shiny files
+========================================================
+
+The Shiny package is used when building this application.
+
+The source code is in 2 files:
+- `ui.R`
+- `server.R`
+
+Both files can be found here: [GitHub repo](https://github.com/Vmudsam)
+
+Application
+========================================================
+
+
+The application shows a plot of the weight and miles per gallon, a regression line on the plot is also shown. 
+
+The data set used is mtcars in R.
+
+By selecting specific features of the cars
+- `Weight`
+- `Gear`
+- `Cylinder`
+
+the user can predict the miles per gallon and the regression is recalculated based on the cars that have the selected features. 
+
+If there are no features selected the regression model will use all data.
+
+
